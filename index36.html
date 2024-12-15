@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+    <title>HTML Only</title>
+</head>
+<body>
+    <div style="background-color: black; color: white; text-align: center; padding: 10px;">
+        <h1>HTML Only</h1>
+        <p>&#9654; Navigation</p>
+    </div>
+    <div style="border: 2px solid magenta; padding: 10px; margin: 10px;">
+        <h2>What is this?</h2>
+        <p>This page was inspired by a <a href="https://twitter.com/whitep4nth3r/status/1447613887984107520">tweet from Salma</a>. Pretty HTML only pages are difficult to make well, and accessible. But here we are. I'm trying my best.</p>
+    </div>
+    <div style="border: 2px solid cyan; padding: 10px; margin: 10px;">
+        <h2>How does this work?</h2>
+        <p>The key to a lot of this is leveraging using tables with a <code>role="presentation"</code> attribute to make decorated sections without css. If you view source on the page, you'll see that there are a LOT of tables. The table tag typically is used to display tabular data and should NOT be used as a layout method. However, since I am not allowed to use CSS, I am pretty much exclusively relying on tables for this purpose. The presentation role tells the browser to not expose the table and its tabular children in the accessibility tree. This will make it easier to navigate for assistive technology.</p>
+        <p>I'm also leveraging some deprecated HTML elements from HTML 3.2 that you should never use. In order to be "compliant", I've added the HTML 3.2 doctype at the top of the page:</p>
+        <pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</pre>
+        <p>This helps give a hint to the browser that we are going to use some older stuff.</p>
+        <p>HOWEVER, I'm also using some newer things such as <code>details/summary</code>, <code>section</code>, <code>main</code>, <code>header</code>, and <code>footer</code>. So I'm just making a mess of my doctype and what I should be actually using!</p>
+    </div>
+    <div style="border: 2px solid orange; padding: 10px; margin: 10px;">
+        <h2>But Why?</h2>
+        <img src="https://i.pinimg.com/736x/8a/45/d1/8a45d16a8e8ff9c3d39b460d680f1cb9.jpg" width="300" height="300">
+    </div>
+</body>
+</html>
