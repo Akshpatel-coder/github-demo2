@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blog</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                text-align: center;
+            }
+            nav {
+                background-color: #444;
+                width: 200px;
+                height: 100vh;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            nav a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+            nav a:hover {
+                background-color: #555;
+                padding: 5px;
+            }
+            .content {
+                flex: 1;
+                padding: 20px;
+            }
+            .sidebar {
+                width: 250px;
+                background-color: #f4f4f4;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            .post {
+                margin-botton: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Blog</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Content</a>
+        </nav>
+        <div class="content">
+            <div class="post">
+                <h2>Blog Post Title 1</h2>
+                <p>This is the content of the second blog post.</p>
+        </div>
+
+        <div class="post">
+            <h2>Blog Post Title 2</h2>
+            <p>This is the content of the second blog post.</p>
+        </div>
+        </div>
+        <aside class="sidebar">
+            <h2>About Me </h2>
+            <p>This is the sidebar content with information about me.</p>
+        </aside>
+    </body>
+</html>
