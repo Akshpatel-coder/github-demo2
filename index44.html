@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devoce-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+input[type="text"] {
+width: 80px;
+padding: 10px;
+border: 1px solid #ddd;
+}
+button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do-List</h1>
+            <input type="text" id="task" placeholder="Enter a new task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="tasklist"></ul>
+        </div>
+        <script>
+            function addTask() {
+                var taskInput=document.getElementById('task');
+                var tasklist = document.getElementById('taskList');
+                var newTask = taskInput.value;
+                if (newTask='') {
+                    var listItem = document.createElement('li');
+                    lisrItem.textContent= newTask;
+                    taskList.appendChild(listItem);
+                    taskInput.value='';
+
+            }
+        }
+        </script>
+    </body>
+</html>
