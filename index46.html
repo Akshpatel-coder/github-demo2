@@ -1,1 +1,43 @@
-<P>Hello World!!</P>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Color Picker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .color-picker-container {
+            text-align: center;
+        }
+        input[type="color"] {
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-picker-container">
+        <h1>Pick a Color!</h1>
+        <input type="color" id="colorPicker" value="#ffffff">
+    </div>
+    <script>
+        document.getElementById('colorPicker').addEventListener('input', function() {
+            document.body.style.backgroundColor = this.value;
+        });
+    </script>
+</body>
+</html>
